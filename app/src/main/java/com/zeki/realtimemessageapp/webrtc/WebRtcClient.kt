@@ -381,6 +381,7 @@ class WebRtcClient(
         //添加视频源到流
         localMediaStream?.addTrack(factory.createVideoTrack("LM$t", localVideoSource))
 
+
         //声音源
         localAudioSource = factory.createAudioSource(MediaConstraints())
         localAudioTrack = factory.createAudioTrack("audiotrack", localAudioSource)
